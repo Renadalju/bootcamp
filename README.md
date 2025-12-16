@@ -86,9 +86,9 @@ click==8.1.3
 
 ---
 
-## Usage
+## Usage(CLI)
+use this command:
 
-```bash
-use this command: 
+```bash 
 uv run python -m src.csv_profiler.typertest data/sample.csv
 ```
