@@ -53,15 +53,17 @@ bootcamp/
 ## Installation
 
 ### Step 1: Set up a virtual environment
+```
 uv venv -p 3.11
+```
 
-On Windows (PowerShell):
+Activate On Windows (PowerShell):
 
 ```powershell
 .venv\Scripts\activate
 ```
 
-On Linux / Mac:
+Activate On Linux / Mac:
 
 ```bash
 . .venv/bin/activate
@@ -89,4 +91,4 @@ click==8.1.3
 ```bash
 use this command: 
 uv run python -m src.csv_profiler.typertest data/sample.csv
----
+```
