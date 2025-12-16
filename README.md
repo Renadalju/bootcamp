@@ -25,7 +25,7 @@ It produces **JSON** and **Markdown** reports containing essential information s
   * **JSON**: for programmatic use or further analysis.
   * **Markdown**: for easy viewing and sharing.
 * **CLI interface** using Typer to pass CSV files and generate reports.
-* **Prevents overwriting** of existing reports or allows creating timestamped files.
+
 
 ---
 
