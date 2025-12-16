@@ -1,53 +1,4 @@
 # CSV Profiler
-
-[![Python](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/)
-
-## Overview
-
-**CSV Profiler** is a Python tool designed to quickly analyze CSV files and generate detailed column-level statistics.
-It produces **JSON** and **Markdown** reports containing essential information such as missing values, unique counts, numeric statistics (e.g., min, max, mean, median), and top values for text columns.
-
----
-
-## Features
-
-* **Reads CSV files** and generates detailed column profiles.
-* Computes **numeric statistics** for numeric columns:
-
-  * `count`, `missing`, `unique`, `min`, `max`, `mean`, `median`.
-* Computes **text statistics** for text/categorical columns:
-
-  * `count`, `missing`, `unique`, `top values`.
-* **Automatic column type detection** (`numeric` or `text`).
-* Calculates **missing value percentages** per column.
-* Generates reports in two formats:
-
-  * **JSON**: for programmatic use or further analysis.
-  * **Markdown**: for easy viewing and sharing.
-* **CLI interface** using Typer to pass CSV files and generate reports.
-
-
----
-
-## Project Structure
-
-```
-bootcamp/
-├─ src/
-│  └─ csv_profiler/
-│     ├─ __init__.py
-│     ├─ io.py
-│     ├─ profile.py
-│     ├─ render.py
-│     ├─ typertest.py
-├─ data/
-│  └─ sample.csv
-├─ outputs/
-├─ requirements.txt
-├─ README.md
-└─ pyproject.toml
-```
-
 ---
 
 ## Installation
@@ -56,6 +7,8 @@ bootcamp/
 ```
 uv venv -p 3.11
 ```
+
+### Step 2: Activate it
 
 Activate On Windows (PowerShell):
 
@@ -67,21 +20,6 @@ Activate On Linux / Mac:
 
 ```bash
 . .venv/bin/activate
-```
-
-### Step 2: Install the dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Requirements
-
-```text
-typer==0.9.0
-click==8.1.3
 ```
 
 ---
