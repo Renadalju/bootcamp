@@ -1,7 +1,6 @@
 # CSV Profiler
 
 [![Python](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 ## Overview
 
@@ -89,6 +88,8 @@ click==8.1.3
 ## Usage
 
 ```bash
+
+## Command:
 uv run python -m src.csv_profiler.typertest data/sample.csv
 ---
 
