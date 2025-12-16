@@ -13,7 +13,7 @@ uv venv -p 3.11
 Activate On Windows (PowerShell):
 
 ```powershell
-.venv\Scripts\activate
+.venv\Scripts\activate.ps1
 ```
 
 Activate On Linux / Mac:
