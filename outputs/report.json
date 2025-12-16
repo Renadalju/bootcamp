@@ -1,0 +1,90 @@
+{
+  "rows": 4,
+  "n_cols": 4,
+  "columns": [
+    "name",
+    " age",
+    " city",
+    " salary"
+  ],
+  "missing": {
+    "name": 0,
+    " age": 1,
+    " city": 1,
+    " salary": 1
+  },
+  "non_empty": {
+    "name": 4,
+    " age": 3,
+    " city": 3,
+    " salary": 3
+  },
+  "dtype": {
+    "name": "text",
+    " age": "numeric",
+    " city": "text",
+    " salary": "numeric"
+  },
+  "stats": {
+    "name": {
+      "count": 4,
+      "missing": 0,
+      "unique": 4,
+      "top_values": [
+        {
+          "value": "Aisha",
+          "count": 1
+        },
+        {
+          "value": "Fahad",
+          "count": 1
+        },
+        {
+          "value": "Noor",
+          "count": 1
+        },
+        {
+          "value": "Salem",
+          "count": 1
+        }
+      ]
+    },
+    " age": {
+      "count": 3,
+      "unique": 3,
+      "missing": 1,
+      "min": 23.0,
+      "max": 31.0,
+      "mean": 27.666666666666668,
+      "median": 29.0
+    },
+    " city": {
+      "count": 3,
+      "missing": 1,
+      "unique": 3,
+      "top_values": [
+        {
+          "value": " Riyadh",
+          "count": 1
+        },
+        {
+          "value": " Jeddah",
+          "count": 1
+        },
+        {
+          "value": " Dammam",
+          "count": 1
+        }
+      ]
+    },
+    " salary": {
+      "count": 3,
+      "unique": 3,
+      "missing": 1,
+      "min": 9000.0,
+      "max": 15000.0,
+      "mean": 12000.0,
+      "median": 12000.0
+    }
+  }
+}
