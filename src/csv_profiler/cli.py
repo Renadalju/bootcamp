@@ -1,13 +1,10 @@
 from pathlib import Path
 import typer
-import sys
 from .io import read_csv_rows
 from .profile import basic_profile
 from .render import write_json, write_markdown
 
 
-# Allow imports from src/
-sys.path.append(str(Path(__file__).resolve().parent / "src"))
 app = typer.Typer(help="CSV Profiler CLI")
 
 @app.command()
