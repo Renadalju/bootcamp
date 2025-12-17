@@ -30,3 +30,10 @@ use this command:
 ```bash 
 uv run python -m src.csv_profiler.cli data/sample.csv
 ```
+
+## Open Streamlit:
+
+### Command: 
+```
+uv run streamlit run app.py
+```
