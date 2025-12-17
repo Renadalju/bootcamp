@@ -1,6 +1,5 @@
 from pathlib import Path
 import typer
-
 from .io import read_csv_rows
 from .profile import basic_profile
 from .render import write_json, write_markdown
