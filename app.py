@@ -37,9 +37,12 @@ except Exception as e:
     st.error(f"❌ Failed to read CSV: {e}")
     st.stop()
 
-if not rows:
-    st.error("⚠️ The uploaded CSV file is empty (no data rows found).")
+if len(rows) == 0:
+    st.error("CSV has no data. Upload a CSV with at least 1 row.")
     st.stop()
+
+if len(rows[0]) == 0:
+    st.warning("CSV has no headers (no columns detected).")
 
 
 # CSV Info
