@@ -28,5 +28,5 @@ Activate On Linux / Mac:
 use this command:
 
 ```bash 
-uv run python -m src.csv_profiler.typertest data/sample.csv
+uv run python -m src.csv_profiler.cli data/sample.csv
 ```
