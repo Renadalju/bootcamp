@@ -13,15 +13,13 @@ from csv_profiler.profile import basic_profile
 from csv_profiler.render import write_markdown
 
 
-# ------------------------
+
 # Streamlit Page Config
-# ------------------------
 st.set_page_config(page_title="CSV Profiler", layout="wide")
 st.title("CSV Profiler")
 
-# ------------------------
+
 # Upload CSV
-# ------------------------
 uploaded = st.file_uploader("Upload a CSV", type=["csv"])
 show_preview = st.checkbox("Show preview", value=True)
 
@@ -40,25 +38,23 @@ if uploaded is not None:
 else:
     st.info("Upload a CSV to begin.")
 
-# ------------------------
+
 # Generate Report
-# ------------------------
 if st.button("Generate Report", disabled=not rows):
     report = basic_profile(rows)
     st.session_state["report"] = report
 
-# ------------------------
+
 # Display Report
-# ------------------------
 report = st.session_state.get("report")
 
 if report:
-    # ===== Tabs =====
+    # Tabs
     tab1, tab2, tab3 = st.tabs(
         ["📊 Tables", "📝 Markdown Report", "🧾 Raw JSON"]
     )
 
-    # ===== Tab 1: Tables =====
+    # Tab 1: Tables 
     with tab1:
         st.subheader("Dataset Summary")
 
@@ -84,7 +80,7 @@ if report:
 
         st.dataframe(counts_df, use_container_width=True)
 
-    # ===== Tab 2: Markdown =====
+    #  Tab 2: Markdown 
     with tab2:
         st.subheader("Markdown Report")
 
@@ -97,6 +93,6 @@ if report:
 
         st.markdown(markdown_text)
 
-    # ===== Tab 3: Raw JSON =====
+    # Tab 3: Raw JSON 
     with tab3:
         st.json(report)
