@@ -13,7 +13,7 @@ uv venv -p 3.11
 Activate On Windows (PowerShell):
 
 ```powershell
-.venv\Scripts\Activate.ps1
+.\.venv\Scripts\activate
 ```
 
 Activate On Linux / Mac:
@@ -28,7 +28,7 @@ Activate On Linux / Mac:
 use this command:
 
 ```bash 
-uv run python -m src.csv_profiler.cli data/sample.csv
+uv run python -m csv_profiler.cli data/sample.csv
 ```
 ---
 
