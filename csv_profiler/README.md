@@ -38,3 +38,6 @@ uv run python -m csv_profiler.cli data/sample.csv
 ```bash
 uv run streamlit run app.py
 ```
+ ---
+
+![CSV Profiler UI](images/Screenshot.png)
