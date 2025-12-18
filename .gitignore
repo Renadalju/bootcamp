@@ -1,0 +1,26 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Local outputs
+outputs/
+*.log
+
+# Environment files with secrets
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
