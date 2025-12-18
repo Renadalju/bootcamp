@@ -40,4 +40,4 @@ uv run streamlit run app.py
 ```
  ---
 
-![CSV Profiler UI](images/Screenshot.png)
+![CSV Profiler UI](/images/Screenshot.png)
