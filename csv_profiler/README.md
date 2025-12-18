@@ -1,8 +1,6 @@
 # CSV Profiler
 ---
 
-## Installation
-
 ### Step 1: Set up a virtual environment
 ```
 uv venv -p 3.11
@@ -20,6 +18,13 @@ Activate On Linux / Mac:
 
 ```bash
 . .venv/bin/activate
+```
+
+---
+
+## Installation
+```
+uv pip install -r requirements.txt
 ```
 
 ---
