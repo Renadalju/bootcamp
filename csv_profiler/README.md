@@ -32,7 +32,7 @@ uv run python -m csv_profiler.cli data/sample.csv
 ```
 ---
 
-## Open Streamlit (GUI):
+## Streamlit (GUI):
 
 ### Command: 
 ```bash
